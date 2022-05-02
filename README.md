@@ -1,2 +1,50 @@
 # JamEx-Limited
-This code should execute the salesperson number, class number, sales amount and the commission rate.
+# This code should execute the salesperson number, class number, sales amount and the commission rate.
+
+# Declaring the variables
+sales_num=int(input("Please enter the sales person number "))
+sales_amt=float(input("Please enter the sales amount "))
+cla_ss=int(input("Please enter the class number "))
+comm_rate=float
+commission=float
+
+# Function created to terminate predefined input
+def quit(cla_ss = 4):
+    print("Invalid class, PROGRAM TERMINATED.")
+
+# Using the if statement to check if the conditions are met.
+if cla_ss == 1:
+    if sales_amt < 1000:
+        comm_rate = .06
+    else:
+        if sales_amt > 1000 < 2000:
+            comm_rate = .07
+        else:
+            if sales_amt > 2000:
+                comm_rate = 0.1
+
+if cla_ss == 2:
+    if sales_amt < 1000:
+        comm_rate = .04
+    else:
+        if sales_amt  > 1000:
+            comm_rate = .06
+
+if cla_ss == 3:
+    comm_rate = .045
+
+
+if cla_ss == 4:
+    print("Invalid class, PROGRAM TERMINATED.")    
+
+# Calculating the commission 
+commission = sales_amt * comm_rate
+
+
+print("The commission rate is", comm_rate, "for sales person", sales_num, "with commission", commission)
+
+print("Please enter sales person number ",sales_num)
+print("Please enter sales amount ", sales_amt)
+print("Please enter the class number ", cla_ss)
+
+
